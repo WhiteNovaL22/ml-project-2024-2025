@@ -1,0 +1,616 @@
+        .training(
+            train_batch_size=1024, # 每轮优化使用多少样本
+            lr=1e-4, # 学习率
+            gamma=0.99, # 折扣因子，衡量未来奖励的重要性
+            clip_param=0.2,
+            use_critic=True,
+            use_gae=True,
+            lambda_=0.95,
+            grad_clip=0.5,
+            vf_clip_param=10.0,
+            vf_loss_coeff=1.0,
+            entropy_coeff=0.01,
+        ) # 此处进行参数调优
+        .debugging(log_level="ERROR")
+
+0 {'archer_0': 1.5, 'archer_1': 1.5}
+1 {'archer_0': 1.625, 'archer_1': 1.625}
+2 {'archer_0': 1.78, 'archer_1': 1.78}
+3 {'archer_0': 1.98, 'archer_1': 1.98}
+4 {'archer_0': 1.64, 'archer_1': 1.64}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+5 {'archer_0': 1.8, 'archer_1': 1.8}
+6 {'archer_0': 2.245, 'archer_1': 2.245}
+7 {'archer_0': 2.125, 'archer_1': 2.125}
+8 {'archer_0': 2.4, 'archer_1': 2.4}
+9 {'archer_0': 2.615, 'archer_1': 2.615}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+10 {'archer_0': 2.855, 'archer_1': 2.855}
+11 {'archer_0': 3.425, 'archer_1': 3.425}
+12 {'archer_0': 3.405, 'archer_1': 3.405}
+13 {'archer_0': 3.38, 'archer_1': 3.38}
+14 {'archer_0': 3.215, 'archer_1': 3.215}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+15 {'archer_0': 2.81, 'archer_1': 2.81}
+16 {'archer_0': 2.515, 'archer_1': 2.515}
+17 {'archer_0': 2.8, 'archer_1': 2.8}
+18 {'archer_0': 3.07, 'archer_1': 3.07}
+19 {'archer_0': 3.46, 'archer_1': 3.46}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+20 {'archer_0': 3.62, 'archer_1': 3.62}
+21 {'archer_0': 3.725, 'archer_1': 3.725}
+22 {'archer_0': 3.53, 'archer_1': 3.53}
+23 {'archer_0': 3.53, 'archer_1': 3.53}
+24 {'archer_0': 3.04, 'archer_1': 3.04}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+25 {'archer_0': 2.94, 'archer_1': 2.94}
+26 {'archer_0': 2.725, 'archer_1': 2.725}
+27 {'archer_0': 2.735, 'archer_1': 2.735}
+28 {'archer_0': 2.855, 'archer_1': 2.855}
+29 {'archer_0': 2.9, 'archer_1': 2.9}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+30 {'archer_0': 3.045, 'archer_1': 3.045}
+31 {'archer_0': 3.33, 'archer_1': 3.33}
+32 {'archer_0': 3.665, 'archer_1': 3.665}
+33 {'archer_0': 4.155, 'archer_1': 4.155}
+34 {'archer_0': 4.185, 'archer_1': 4.185}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+35 {'archer_0': 4.505, 'archer_1': 4.505}
+36 {'archer_0': 4.23, 'archer_1': 4.23}
+37 {'archer_0': 4.755, 'archer_1': 4.755}
+38 {'archer_0': 4.82, 'archer_1': 4.82}
+39 {'archer_0': 4.68, 'archer_1': 4.68}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+40 {'archer_0': 4.09, 'archer_1': 4.09}
+41 {'archer_0': 4.03, 'archer_1': 4.03}
+42 {'archer_0': 4.225, 'archer_1': 4.225}
+43 {'archer_0': 3.87, 'archer_1': 3.87}
+44 {'archer_0': 3.745, 'archer_1': 3.745}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+45 {'archer_0': 3.94, 'archer_1': 3.94}
+46 {'archer_0': 4.015, 'archer_1': 4.015}
+47 {'archer_0': 4.25, 'archer_1': 4.25}
+48 {'archer_0': 4.505, 'archer_1': 4.505}
+49 {'archer_0': 4.195, 'archer_1': 4.195}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+50 {'archer_0': 4.1, 'archer_1': 4.1}
+51 {'archer_0': 3.805, 'archer_1': 3.805}
+52 {'archer_0': 3.885, 'archer_1': 3.885}
+53 {'archer_0': 4.13, 'archer_1': 4.13}
+54 {'archer_0': 4.385, 'archer_1': 4.385}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+55 {'archer_0': 4.135, 'archer_1': 4.135}
+56 {'archer_0': 3.74, 'archer_1': 3.74}
+57 {'archer_0': 3.585, 'archer_1': 3.585}
+58 {'archer_0': 3.695, 'archer_1': 3.695}
+59 {'archer_0': 3.885, 'archer_1': 3.885}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+60 {'archer_0': 3.87, 'archer_1': 3.87}
+61 {'archer_0': 3.725, 'archer_1': 3.725}
+62 {'archer_0': 3.525, 'archer_1': 3.525}
+63 {'archer_0': 3.54, 'archer_1': 3.54}
+64 {'archer_0': 3.445, 'archer_1': 3.445}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+65 {'archer_0': 3.39, 'archer_1': 3.39}
+66 {'archer_0': 4.015, 'archer_1': 4.015}
+67 {'archer_0': 3.73, 'archer_1': 3.73}
+68 {'archer_0': 3.84, 'archer_1': 3.84}
+69 {'archer_0': 4.165, 'archer_1': 4.165}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+70 {'archer_0': 3.83, 'archer_1': 3.83}
+71 {'archer_0': 3.685, 'archer_1': 3.685}
+72 {'archer_0': 3.5, 'archer_1': 3.5}
+73 {'archer_0': 3.34, 'archer_1': 3.34}
+74 {'archer_0': 3.245, 'archer_1': 3.245}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+75 {'archer_0': 3.305, 'archer_1': 3.305}
+76 {'archer_0': 3.41, 'archer_1': 3.41}
+77 {'archer_0': 3.66, 'archer_1': 3.66}
+78 {'archer_0': 3.57, 'archer_1': 3.57}
+79 {'archer_0': 3.445, 'archer_1': 3.445}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+80 {'archer_0': 3.205, 'archer_1': 3.205}
+81 {'archer_0': 3.285, 'archer_1': 3.285}
+82 {'archer_0': 3.28, 'archer_1': 3.28}
+83 {'archer_0': 3.245, 'archer_1': 3.245}
+84 {'archer_0': 3.84, 'archer_1': 3.84}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+85 {'archer_0': 3.945, 'archer_1': 3.945}
+86 {'archer_0': 4.265, 'archer_1': 4.265}
+87 {'archer_0': 4.435, 'archer_1': 4.435}
+88 {'archer_0': 4.51, 'archer_1': 4.51}
+89 {'archer_0': 4.48, 'archer_1': 4.48}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+90 {'archer_0': 4.195, 'archer_1': 4.195}
+91 {'archer_0': 4.655, 'archer_1': 4.655}
+92 {'archer_0': 4.835, 'archer_1': 4.835}
+93 {'archer_0': 4.465, 'archer_1': 4.465}
+94 {'archer_0': 4.51, 'archer_1': 4.51}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+95 {'archer_0': 4.585, 'archer_1': 4.585}
+96 {'archer_0': 4.65, 'archer_1': 4.65}
+97 {'archer_0': 4.74, 'archer_1': 4.74}
+98 {'archer_0': 4.86, 'archer_1': 4.86}
+99 {'archer_0': 4.765, 'archer_1': 4.765}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+100 {'archer_0': 4.815, 'archer_1': 4.815}
+101 {'archer_0': 4.365, 'archer_1': 4.365}
+102 {'archer_0': 4.01, 'archer_1': 4.01}
+103 {'archer_0': 4.155, 'archer_1': 4.155}
+104 {'archer_0': 3.765, 'archer_1': 3.765}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+105 {'archer_0': 4.085, 'archer_1': 4.085}
+106 {'archer_0': 4.08, 'archer_1': 4.08}
+107 {'archer_0': 4.445, 'archer_1': 4.445}
+108 {'archer_0': 4.91, 'archer_1': 4.91}
+109 {'archer_0': 4.46, 'archer_1': 4.46}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+110 {'archer_0': 4.265, 'archer_1': 4.265}
+111 {'archer_0': 4.06, 'archer_1': 4.06}
+112 {'archer_0': 4.455, 'archer_1': 4.455}
+113 {'archer_0': 3.435, 'archer_1': 3.435}
+114 {'archer_0': 3.345, 'archer_1': 3.345}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+115 {'archer_0': 3.785, 'archer_1': 3.785}
+116 {'archer_0': 4.095, 'archer_1': 4.095}
+117 {'archer_0': 4.02, 'archer_1': 4.02}
+118 {'archer_0': 5.045, 'archer_1': 5.045}
+119 {'archer_0': 4.94, 'archer_1': 4.94}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+120 {'archer_0': 5.76, 'archer_1': 5.76}
+121 {'archer_0': 6.08, 'archer_1': 6.08}
+122 {'archer_0': 5.99, 'archer_1': 5.99}
+123 {'archer_0': 6.475, 'archer_1': 6.475}
+124 {'archer_0': 6.455, 'archer_1': 6.455}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+125 {'archer_0': 7.28, 'archer_1': 7.28}
+126 {'archer_0': 6.6, 'archer_1': 6.6}
+127 {'archer_0': 6.26, 'archer_1': 6.26}
+128 {'archer_0': 5.82, 'archer_1': 5.82}
+129 {'archer_0': 5.36, 'archer_1': 5.36}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+130 {'archer_0': 5.6, 'archer_1': 5.6}
+131 {'archer_0': 5.44, 'archer_1': 5.44}
+132 {'archer_0': 5.705, 'archer_1': 5.705}
+133 {'archer_0': 5.355, 'archer_1': 5.355}
+134 {'archer_0': 5.34, 'archer_1': 5.34}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+135 {'archer_0': 5.255, 'archer_1': 5.255}
+136 {'archer_0': 5.095, 'archer_1': 5.095}
+137 {'archer_0': 5.05, 'archer_1': 5.05}
+138 {'archer_0': 5.03, 'archer_1': 5.03}
+139 {'archer_0': 4.425, 'archer_1': 4.425}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+140 {'archer_0': 4.145, 'archer_1': 4.145}
+141 {'archer_0': 3.64, 'archer_1': 3.64}
+142 {'archer_0': 3.525, 'archer_1': 3.525}
+143 {'archer_0': 3.72, 'archer_1': 3.72}
+144 {'archer_0': 3.625, 'archer_1': 3.625}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+145 {'archer_0': 3.135, 'archer_1': 3.135}
+146 {'archer_0': 2.9, 'archer_1': 2.9}
+147 {'archer_0': 2.93, 'archer_1': 2.93}
+148 {'archer_0': 2.715, 'archer_1': 2.715}
+149 {'archer_0': 2.58, 'archer_1': 2.58}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+150 {'archer_0': 3.015, 'archer_1': 3.015}
+151 {'archer_0': 3.015, 'archer_1': 3.015}
+152 {'archer_0': 3.055, 'archer_1': 3.055}
+153 {'archer_0': 3.34, 'archer_1': 3.34}
+154 {'archer_0': 3.525, 'archer_1': 3.525}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+155 {'archer_0': 3.63, 'archer_1': 3.63}
+156 {'archer_0': 3.33, 'archer_1': 3.33}
+157 {'archer_0': 3.635, 'archer_1': 3.635}
+158 {'archer_0': 3.705, 'archer_1': 3.705}
+159 {'archer_0': 3.325, 'archer_1': 3.325}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+160 {'archer_0': 3.375, 'archer_1': 3.375}
+161 {'archer_0': 3.55, 'archer_1': 3.55}
+162 {'archer_0': 3.42, 'archer_1': 3.42}
+163 {'archer_0': 3.06, 'archer_1': 3.06}
+164 {'archer_0': 3.155, 'archer_1': 3.155}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+165 {'archer_0': 2.985, 'archer_1': 2.985}
+166 {'archer_0': 2.84, 'archer_1': 2.84}
+167 {'archer_0': 2.725, 'archer_1': 2.725}
+168 {'archer_0': 3.02, 'archer_1': 3.02}
+169 {'archer_0': 3.095, 'archer_1': 3.095}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+170 {'archer_0': 3.07, 'archer_1': 3.07}
+171 {'archer_0': 3.08, 'archer_1': 3.08}
+172 {'archer_0': 3.285, 'archer_1': 3.285}
+173 {'archer_0': 3.345, 'archer_1': 3.345}
+174 {'archer_0': 3.2, 'archer_1': 3.2}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+175 {'archer_0': 3.28, 'archer_1': 3.28}
+176 {'archer_0': 3.505, 'archer_1': 3.505}
+177 {'archer_0': 3.74, 'archer_1': 3.74}
+178 {'archer_0': 3.65, 'archer_1': 3.65}
+179 {'archer_0': 3.865, 'archer_1': 3.865}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+180 {'archer_0': 3.805, 'archer_1': 3.805}
+181 {'archer_0': 3.965, 'archer_1': 3.965}
+182 {'archer_0': 4.105, 'archer_1': 4.105}
+183 {'archer_0': 4.165, 'archer_1': 4.165}
+184 {'archer_0': 3.665, 'archer_1': 3.665}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+185 {'archer_0': 3.385, 'archer_1': 3.385}
+186 {'archer_0': 3.2, 'archer_1': 3.2}
+187 {'archer_0': 3.26, 'archer_1': 3.26}
+188 {'archer_0': 2.83, 'archer_1': 2.83}
+189 {'archer_0': 2.9, 'archer_1': 2.9}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+190 {'archer_0': 2.895, 'archer_1': 2.895}
+191 {'archer_0': 2.825, 'archer_1': 2.825}
+192 {'archer_0': 2.905, 'archer_1': 2.905}
+193 {'archer_0': 2.725, 'archer_1': 2.725}
+194 {'archer_0': 2.65, 'archer_1': 2.65}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+195 {'archer_0': 2.51, 'archer_1': 2.51}
+196 {'archer_0': 2.78, 'archer_1': 2.78}
+197 {'archer_0': 2.96, 'archer_1': 2.96}
+198 {'archer_0': 3.54, 'archer_1': 3.54}
+199 {'archer_0': 3.73, 'archer_1': 3.73}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+200 {'archer_0': 3.895, 'archer_1': 3.895}
+201 {'archer_0': 4.13, 'archer_1': 4.13}
+202 {'archer_0': 3.905, 'archer_1': 3.905}
+203 {'archer_0': 3.52, 'archer_1': 3.52}
+204 {'archer_0': 3.36, 'archer_1': 3.36}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+205 {'archer_0': 3.85, 'archer_1': 3.85}
+206 {'archer_0': 4.07, 'archer_1': 4.07}
+207 {'archer_0': 4.07, 'archer_1': 4.07}
+208 {'archer_0': 4.42, 'archer_1': 4.42}
+209 {'archer_0': 4.49, 'archer_1': 4.49}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+210 {'archer_0': 4.465, 'archer_1': 4.465}
+211 {'archer_0': 4.405, 'archer_1': 4.405}
+212 {'archer_0': 4.495, 'archer_1': 4.495}
+213 {'archer_0': 4.135, 'archer_1': 4.135}
+214 {'archer_0': 4.46, 'archer_1': 4.46}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+215 {'archer_0': 4.385, 'archer_1': 4.385}
+216 {'archer_0': 4.435, 'archer_1': 4.435}
+217 {'archer_0': 4.72, 'archer_1': 4.72}
+218 {'archer_0': 4.98, 'archer_1': 4.98}
+219 {'archer_0': 5.415, 'archer_1': 5.415}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+220 {'archer_0': 5.665, 'archer_1': 5.665}
+221 {'archer_0': 5.36, 'archer_1': 5.36}
+222 {'archer_0': 5.14, 'archer_1': 5.14}
+223 {'archer_0': 5.42, 'archer_1': 5.42}
+224 {'archer_0': 5.59, 'archer_1': 5.59}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+225 {'archer_0': 5.345, 'archer_1': 5.345}
+226 {'archer_0': 5.155, 'archer_1': 5.155}
+227 {'archer_0': 5.175, 'archer_1': 5.175}
+228 {'archer_0': 5.25, 'archer_1': 5.25}
+229 {'archer_0': 5.885, 'archer_1': 5.885}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+230 {'archer_0': 5.745, 'archer_1': 5.745}
+231 {'archer_0': 5.645, 'archer_1': 5.645}
+232 {'archer_0': 6.15, 'archer_1': 6.15}
+233 {'archer_0': 5.715, 'archer_1': 5.715}
+234 {'archer_0': 5.02, 'archer_1': 5.02}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+235 {'archer_0': 4.095, 'archer_1': 4.095}
+236 {'archer_0': 4.18, 'archer_1': 4.18}
+237 {'archer_0': 3.94, 'archer_1': 3.94}
+238 {'archer_0': 3.61, 'archer_1': 3.61}
+239 {'archer_0': 3.62, 'archer_1': 3.62}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+240 {'archer_0': 3.88, 'archer_1': 3.88}
+241 {'archer_0': 4.495, 'archer_1': 4.495}
+242 {'archer_0': 5.29, 'archer_1': 5.29}
+243 {'archer_0': 5.515, 'archer_1': 5.515}
+244 {'archer_0': 5.94, 'archer_1': 5.94}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+245 {'archer_0': 6.03, 'archer_1': 6.03}
+246 {'archer_0': 6.205, 'archer_1': 6.205}
+247 {'archer_0': 6.725, 'archer_1': 6.725}
+248 {'archer_0': 5.825, 'archer_1': 5.825}
+249 {'archer_0': 5.525, 'archer_1': 5.525}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+250 {'archer_0': 5.14, 'archer_1': 5.14}
+251 {'archer_0': 5.065, 'archer_1': 5.065}
+252 {'archer_0': 4.97, 'archer_1': 4.97}
+253 {'archer_0': 5.3, 'archer_1': 5.3}
+254 {'archer_0': 4.945, 'archer_1': 4.945}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+255 {'archer_0': 5.145, 'archer_1': 5.145}
+256 {'archer_0': 5.215, 'archer_1': 5.215}
+257 {'archer_0': 4.76, 'archer_1': 4.76}
+258 {'archer_0': 4.32, 'archer_1': 4.32}
+259 {'archer_0': 4.3, 'archer_1': 4.3}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+260 {'archer_0': 5.24, 'archer_1': 5.24}
+261 {'archer_0': 5.44, 'archer_1': 5.44}
+262 {'archer_0': 6.1, 'archer_1': 6.1}
+263 {'archer_0': 5.665, 'archer_1': 5.665}
+264 {'archer_0': 5.435, 'archer_1': 5.435}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+265 {'archer_0': 5.42, 'archer_1': 5.42}
+266 {'archer_0': 5.835, 'archer_1': 5.835}
+267 {'archer_0': 6.02, 'archer_1': 6.02}
+268 {'archer_0': 6.03, 'archer_1': 6.03}
+269 {'archer_0': 6.095, 'archer_1': 6.095}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+270 {'archer_0': 6.2, 'archer_1': 6.2}
+271 {'archer_0': 6.705, 'archer_1': 6.705}
+272 {'archer_0': 5.915, 'archer_1': 5.915}
+273 {'archer_0': 5.95, 'archer_1': 5.95}
+274 {'archer_0': 5.825, 'archer_1': 5.825}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+275 {'archer_0': 5.605, 'archer_1': 5.605}
+276 {'archer_0': 5.23, 'archer_1': 5.23}
+277 {'archer_0': 5.5, 'archer_1': 5.5}
+278 {'archer_0': 5.72, 'archer_1': 5.72}
+279 {'archer_0': 5.905, 'archer_1': 5.905}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+280 {'archer_0': 5.865, 'archer_1': 5.865}
+281 {'archer_0': 6.455, 'archer_1': 6.455}
+282 {'archer_0': 6.35, 'archer_1': 6.35}
+283 {'archer_0': 7.44, 'archer_1': 7.44}
+284 {'archer_0': 7.23, 'archer_1': 7.23}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+285 {'archer_0': 6.975, 'archer_1': 6.975}
+286 {'archer_0': 6.925, 'archer_1': 6.925}
+287 {'archer_0': 7.77, 'archer_1': 7.77}
+288 {'archer_0': 7.96, 'archer_1': 7.96}
+289 {'archer_0': 7.22, 'archer_1': 7.22}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+290 {'archer_0': 7.395, 'archer_1': 7.395}
+291 {'archer_0': 7.85, 'archer_1': 7.85}
+292 {'archer_0': 7.465, 'archer_1': 7.465}
+293 {'archer_0': 7.55, 'archer_1': 7.55}
+294 {'archer_0': 7.21, 'archer_1': 7.21}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+295 {'archer_0': 6.535, 'archer_1': 6.535}
+296 {'archer_0': 6.35, 'archer_1': 6.35}
+297 {'archer_0': 5.74, 'archer_1': 5.74}
+298 {'archer_0': 5.92, 'archer_1': 5.92}
+299 {'archer_0': 6.07, 'archer_1': 6.07}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+300 {'archer_0': 6.035, 'archer_1': 6.035}
+301 {'archer_0': 5.91, 'archer_1': 5.91}
+302 {'archer_0': 5.74, 'archer_1': 5.74}
+303 {'archer_0': 5.37, 'archer_1': 5.37}
+304 {'archer_0': 5.395, 'archer_1': 5.395}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+305 {'archer_0': 4.935, 'archer_1': 4.935}
+306 {'archer_0': 4.335, 'archer_1': 4.335}
+307 {'archer_0': 4.115, 'archer_1': 4.115}
+308 {'archer_0': 4.285, 'archer_1': 4.285}
+309 {'archer_0': 4.345, 'archer_1': 4.345}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+310 {'archer_0': 4.76, 'archer_1': 4.76}
+311 {'archer_0': 4.595, 'archer_1': 4.595}
+312 {'archer_0': 5.335, 'archer_1': 5.335}
+313 {'archer_0': 5.205, 'archer_1': 5.205}
+314 {'archer_0': 5.74, 'archer_1': 5.74}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+315 {'archer_0': 5.69, 'archer_1': 5.69}
+316 {'archer_0': 6.285, 'archer_1': 6.285}
+317 {'archer_0': 5.425, 'archer_1': 5.425}
+318 {'archer_0': 5.38, 'archer_1': 5.38}
+319 {'archer_0': 5.135, 'archer_1': 5.135}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+320 {'archer_0': 4.955, 'archer_1': 4.955}
+321 {'archer_0': 5.14, 'archer_1': 5.14}
+322 {'archer_0': 5.46, 'archer_1': 5.46}
+323 {'archer_0': 5.295, 'archer_1': 5.295}
+324 {'archer_0': 5.45, 'archer_1': 5.45}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+325 {'archer_0': 5.245, 'archer_1': 5.245}
+326 {'archer_0': 5.03, 'archer_1': 5.03}
+327 {'archer_0': 5.245, 'archer_1': 5.245}
+328 {'archer_0': 4.595, 'archer_1': 4.595}
+329 {'archer_0': 4.305, 'archer_1': 4.305}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+330 {'archer_0': 4.095, 'archer_1': 4.095}
+331 {'archer_0': 4.185, 'archer_1': 4.185}
+332 {'archer_0': 4.56, 'archer_1': 4.56}
+333 {'archer_0': 4.035, 'archer_1': 4.035}
+334 {'archer_0': 3.895, 'archer_1': 3.895}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+335 {'archer_0': 4.535, 'archer_1': 4.535}
+336 {'archer_0': 4.33, 'archer_1': 4.33}
+337 {'archer_0': 4.3, 'archer_1': 4.3}
+338 {'archer_0': 4.455, 'archer_1': 4.455}
+339 {'archer_0': 4.545, 'archer_1': 4.545}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+340 {'archer_0': 5.075, 'archer_1': 5.075}
+341 {'archer_0': 4.555, 'archer_1': 4.555}
+342 {'archer_0': 4.18, 'archer_1': 4.18}
+343 {'archer_0': 4.295, 'archer_1': 4.295}
+344 {'archer_0': 4.365, 'archer_1': 4.365}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+345 {'archer_0': 3.61, 'archer_1': 3.61}
+346 {'archer_0': 3.595, 'archer_1': 3.595}
+347 {'archer_0': 3.77, 'archer_1': 3.77}
+348 {'archer_0': 3.545, 'archer_1': 3.545}
+349 {'archer_0': 3.59, 'archer_1': 3.59}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+350 {'archer_0': 4.085, 'archer_1': 4.085}
+351 {'archer_0': 5.02, 'archer_1': 5.02}
+352 {'archer_0': 4.785, 'archer_1': 4.785}
+353 {'archer_0': 4.71, 'archer_1': 4.71}
+354 {'archer_0': 5.21, 'archer_1': 5.21}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+355 {'archer_0': 5.62, 'archer_1': 5.62}
+356 {'archer_0': 6.005, 'archer_1': 6.005}
+357 {'archer_0': 5.555, 'archer_1': 5.555}
+358 {'archer_0': 5.325, 'archer_1': 5.325}
+359 {'archer_0': 4.965, 'archer_1': 4.965}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+360 {'archer_0': 4.46, 'archer_1': 4.46}
+361 {'archer_0': 4.29, 'archer_1': 4.29}
+362 {'archer_0': 4.81, 'archer_1': 4.81}
+363 {'archer_0': 4.175, 'archer_1': 4.175}
+364 {'archer_0': 3.715, 'archer_1': 3.715}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+365 {'archer_0': 3.725, 'archer_1': 3.725}
+366 {'archer_0': 4.05, 'archer_1': 4.05}
+367 {'archer_0': 3.89, 'archer_1': 3.89}
+368 {'archer_0': 3.97, 'archer_1': 3.97}
+369 {'archer_0': 3.93, 'archer_1': 3.93}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+370 {'archer_0': 4.59, 'archer_1': 4.59}
+371 {'archer_0': 4.905, 'archer_1': 4.905}
+372 {'archer_0': 4.59, 'archer_1': 4.59}
+373 {'archer_0': 4.655, 'archer_1': 4.655}
+374 {'archer_0': 4.625, 'archer_1': 4.625}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+375 {'archer_0': 4.495, 'archer_1': 4.495}
+376 {'archer_0': 3.77, 'archer_1': 3.77}
+377 {'archer_0': 3.575, 'archer_1': 3.575}
+378 {'archer_0': 3.63, 'archer_1': 3.63}
+379 {'archer_0': 3.975, 'archer_1': 3.975}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+380 {'archer_0': 3.83, 'archer_1': 3.83}
+381 {'archer_0': 4.595, 'archer_1': 4.595}
+382 {'archer_0': 4.82, 'archer_1': 4.82}
+383 {'archer_0': 4.92, 'archer_1': 4.92}
+384 {'archer_0': 4.87, 'archer_1': 4.87}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+385 {'archer_0': 4.675, 'archer_1': 4.675}
+386 {'archer_0': 4.235, 'archer_1': 4.235}
+387 {'archer_0': 3.1, 'archer_1': 3.1}
+388 {'archer_0': 3.5, 'archer_1': 3.5}
+389 {'archer_0': 3.34, 'archer_1': 3.34}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+390 {'archer_0': 3.365, 'archer_1': 3.365}
+391 {'archer_0': 3.935, 'archer_1': 3.935}
+392 {'archer_0': 4.075, 'archer_1': 4.075}
+393 {'archer_0': 4.345, 'archer_1': 4.345}
+394 {'archer_0': 4.535, 'archer_1': 4.535}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+395 {'archer_0': 4.865, 'archer_1': 4.865}
+396 {'archer_0': 4.78, 'archer_1': 4.78}
+397 {'archer_0': 4.63, 'archer_1': 4.63}
+398 {'archer_0': 4.15, 'archer_1': 4.15}
+399 {'archer_0': 4.115, 'archer_1': 4.115}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+400 {'archer_0': 3.515, 'archer_1': 3.515}
+401 {'archer_0': 4.085, 'archer_1': 4.085}
+402 {'archer_0': 4.035, 'archer_1': 4.035}
+403 {'archer_0': 4.075, 'archer_1': 4.075}
+404 {'archer_0': 4.275, 'archer_1': 4.275}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+405 {'archer_0': 3.965, 'archer_1': 3.965}
+406 {'archer_0': 4.165, 'archer_1': 4.165}
+407 {'archer_0': 4.095, 'archer_1': 4.095}
+408 {'archer_0': 4.27, 'archer_1': 4.27}
+409 {'archer_0': 4.09, 'archer_1': 4.09}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+410 {'archer_0': 3.935, 'archer_1': 3.935}
+411 {'archer_0': 3.92, 'archer_1': 3.92}
+412 {'archer_0': 4.395, 'archer_1': 4.395}
+413 {'archer_0': 4.315, 'archer_1': 4.315}
+414 {'archer_0': 4.645, 'archer_1': 4.645}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+415 {'archer_0': 4.67, 'archer_1': 4.67}
+416 {'archer_0': 4.81, 'archer_1': 4.81}
+417 {'archer_0': 4.975, 'archer_1': 4.975}
+418 {'archer_0': 5.305, 'archer_1': 5.305}
+419 {'archer_0': 5.035, 'archer_1': 5.035}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+420 {'archer_0': 5.15, 'archer_1': 5.15}
+421 {'archer_0': 5.185, 'archer_1': 5.185}
+422 {'archer_0': 5.01, 'archer_1': 5.01}
+423 {'archer_0': 4.51, 'archer_1': 4.51}
+424 {'archer_0': 4.235, 'archer_1': 4.235}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+425 {'archer_0': 4.195, 'archer_1': 4.195}
+426 {'archer_0': 4.59, 'archer_1': 4.59}
+427 {'archer_0': 4.27, 'archer_1': 4.27}
+428 {'archer_0': 4.17, 'archer_1': 4.17}
+429 {'archer_0': 4.49, 'archer_1': 4.49}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+430 {'archer_0': 5.395, 'archer_1': 5.395}
+431 {'archer_0': 5.61, 'archer_1': 5.61}
+432 {'archer_0': 5.715, 'archer_1': 5.715}
+433 {'archer_0': 5.78, 'archer_1': 5.78}
+434 {'archer_0': 5.67, 'archer_1': 5.67}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+435 {'archer_0': 6.5, 'archer_1': 6.5}
+436 {'archer_0': 5.815, 'archer_1': 5.815}
+437 {'archer_0': 5.47, 'archer_1': 5.47}
+438 {'archer_0': 5.415, 'archer_1': 5.415}
+439 {'archer_0': 4.875, 'archer_1': 4.875}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+440 {'archer_0': 4.92, 'archer_1': 4.92}
+441 {'archer_0': 4.14, 'archer_1': 4.14}
+442 {'archer_0': 4.015, 'archer_1': 4.015}
+443 {'archer_0': 4.34, 'archer_1': 4.34}
+444 {'archer_0': 4.21, 'archer_1': 4.21}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+445 {'archer_0': 4.655, 'archer_1': 4.655}
+446 {'archer_0': 4.65, 'archer_1': 4.65}
+447 {'archer_0': 4.78, 'archer_1': 4.78}
+448 {'archer_0': 5.0, 'archer_1': 5.0}
+449 {'archer_0': 4.97, 'archer_1': 4.97}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+450 {'archer_0': 4.27, 'archer_1': 4.27}
+451 {'archer_0': 4.155, 'archer_1': 4.155}
+452 {'archer_0': 4.025, 'archer_1': 4.025}
+453 {'archer_0': 3.555, 'archer_1': 3.555}
+454 {'archer_0': 3.36, 'archer_1': 3.36}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+455 {'archer_0': 3.58, 'archer_1': 3.58}
+456 {'archer_0': 4.295, 'archer_1': 4.295}
+457 {'archer_0': 4.195, 'archer_1': 4.195}
+458 {'archer_0': 4.715, 'archer_1': 4.715}
+459 {'archer_0': 4.905, 'archer_1': 4.905}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+460 {'archer_0': 5.59, 'archer_1': 5.59}
+461 {'archer_0': 5.69, 'archer_1': 5.69}
+462 {'archer_0': 5.67, 'archer_1': 5.67}
+463 {'archer_0': 6.235, 'archer_1': 6.235}
+464 {'archer_0': 6.07, 'archer_1': 6.07}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+465 {'archer_0': 6.02, 'archer_1': 6.02}
+466 {'archer_0': 5.755, 'archer_1': 5.755}
+467 {'archer_0': 5.115, 'archer_1': 5.115}
+468 {'archer_0': 4.73, 'archer_1': 4.73}
+469 {'archer_0': 4.4, 'archer_1': 4.4}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+470 {'archer_0': 4.18, 'archer_1': 4.18}
+471 {'archer_0': 3.79, 'archer_1': 3.79}
+472 {'archer_0': 3.415, 'archer_1': 3.415}
+473 {'archer_0': 3.645, 'archer_1': 3.645}
+474 {'archer_0': 3.565, 'archer_1': 3.565}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+475 {'archer_0': 3.57, 'archer_1': 3.57}
+476 {'archer_0': 3.875, 'archer_1': 3.875}
+477 {'archer_0': 3.885, 'archer_1': 3.885}
+478 {'archer_0': 4.06, 'archer_1': 4.06}
+479 {'archer_0': 4.145, 'archer_1': 4.145}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+480 {'archer_0': 4.1, 'archer_1': 4.1}
+481 {'archer_0': 3.78, 'archer_1': 3.78}
+482 {'archer_0': 3.7, 'archer_1': 3.7}
+483 {'archer_0': 3.475, 'archer_1': 3.475}
+484 {'archer_0': 3.545, 'archer_1': 3.545}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+485 {'archer_0': 3.37, 'archer_1': 3.37}
+486 {'archer_0': 3.92, 'archer_1': 3.92}
+487 {'archer_0': 4.12, 'archer_1': 4.12}
+488 {'archer_0': 3.945, 'archer_1': 3.945}
+489 {'archer_0': 4.36, 'archer_1': 4.36}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+490 {'archer_0': 4.38, 'archer_1': 4.38}
+491 {'archer_0': 4.52, 'archer_1': 4.52}
+492 {'archer_0': 4.9, 'archer_1': 4.9}
+493 {'archer_0': 5.005, 'archer_1': 5.005}
+494 {'archer_0': 4.915, 'archer_1': 4.915}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+495 {'archer_0': 5.215, 'archer_1': 5.215}
+496 {'archer_0': 5.165, 'archer_1': 5.165}
+497 {'archer_0': 5.14, 'archer_1': 5.14}
+498 {'archer_0': 4.875, 'archer_1': 4.875}
+499 {'archer_0': 5.1, 'archer_1': 5.1}
+An Algorithm checkpoint has been created inside directory: 'E:\Work\KUL\Sem_2\Machine_Learning_Project\Project\ml-project-2024-2025\results_multi'.
+
